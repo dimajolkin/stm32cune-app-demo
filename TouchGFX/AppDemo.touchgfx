@@ -5,17 +5,56 @@
         "Name": "Screen1",
         "Components": [
           {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
             "Type": "Button",
             "Name": "button1",
-            "Y": 160,
+            "Y": 270,
             "Width": 240,
             "Height": 50,
             "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
             "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json",
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 25,
+            "Y": 136,
+            "Width": 107,
+            "Height": 24,
+            "TextId": "__SingleUse_ZVVC",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_UOS3",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "onButtonClick"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [],
@@ -68,7 +107,7 @@
     "SubFamily": "STM32F429/439",
     "Toolchain": "STM32CubeIDE",
     "Platform": "m4",
-    "ProjectFile": "../STM32F429I_DISCO_REV_E01.ioc",
+    "ProjectFile": "../AppDemo.ioc",
     "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
     "OptionalComponents": [],
     "AdditionalFeatures": [

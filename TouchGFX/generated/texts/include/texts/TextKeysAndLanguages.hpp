@@ -12,6 +12,8 @@ enum LANGUAGES
 
 enum TEXTS
 {
+    T___SINGLEUSE_UOS3,
+    T___SINGLEUSE_ZVVC,
     NUMBER_OF_TEXT_KEYS
 };
 

@@ -1,8 +1,8 @@
 MSYS-1.0.19 Build:2016-07-13 17:45
-Exception: STATUS_ACCESS_VIOLATION at eip=078B1DA7
-eax=608F9138 ebx=00000001 ecx=00000004 edx=00001624 esi=00001624 edi=00000000
+Exception: STATUS_ACCESS_VIOLATION at eip=079B1DA7
+eax=608F9138 ebx=00000001 ecx=00000004 edx=000029E0 esi=000029E0 edi=00000000
 ebp=0260FDF8 esp=0260FDB0 program=us
 cs=001B ds=0023 es=0023 fs=003B gs=0023 ss=0023
 Stack trace:
 Frame     Function  Args
-   1262 [main] us 0 handle_exceptions: Error while dumping state (probably corrupted stack)
+   1331 [main] us 0 handle_exceptions: Error while dumping state (probably corrupted stack)
